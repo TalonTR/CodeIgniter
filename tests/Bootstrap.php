@@ -1,4 +1,12 @@
 <?php
+
+
+class PHPUnit_Util_ErrorHandler extends \PHPUnit\Util\ErrorHandler {};
+class PHPUnit_Util_Test extends \PHPUnit\Util\Test {};
+
+class PHPUnit_Framework_TestCase extends \PHPUnit\Framework\TestCase
+{
+}
 // Errors on full!
 ini_set('display_errors', 1);
 error_reporting(E_ALL | E_STRICT);
